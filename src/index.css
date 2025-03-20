@@ -1,0 +1,31 @@
+:root {
+  --primary-color: #410445;
+  --secondary-color: #a5158c;
+  --accent-color: #1f7d53;
+  --text-color: #333;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-family: "Playfair Display", cursive;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul,
+  ol {
+    list-style: none;
+  }
+}
