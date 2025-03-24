@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #73047a;
+  --primary-color: #36053a;
   --secondary-color: #ebbce2;
   --accent-color: #1f7d53;
-  --text-color: #333;
+  --text-color: #070707;
   --light-color: #f8f9fa;
   --dark-color: #343a40;
 
@@ -20,6 +20,7 @@
     font-size: 1.6rem;
     color: var(--text-color);
     font-family: "Playfair Display", cursive;
+    border: 0.1rem solid var(--primary-color);
   }
   a {
     text-decoration: none;

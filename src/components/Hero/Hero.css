@@ -8,6 +8,7 @@
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../assets/hero-background.jpg");
   background-size: cover;
+  border: 0.2rem solid var(--primary-color);
 }
 
 .hero-bg {
@@ -29,14 +30,14 @@
 }
 
 .hero-title {
-  font-size: 2rem;
+  font-size: 2rem !important;
   font-weight: bold;
   color: var(--light-color);
   margin-bottom: 1.5rem;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
+  font-size: 1rem !important ;
   color: var(--light-color);
   margin-bottom: 2rem;
   max-width: 800px;
@@ -54,7 +55,7 @@
 .btn {
   display: inline-block;
   padding: 0.75rem 2rem;
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -82,16 +83,16 @@
   background-color: var(--secondary-color);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 500px) {
   .hero-buttons {
     flex-direction: row;
   }
 
   .hero-title {
-    font-size: 4rem;
+    font-size: 1.5rem;
   }
 
   .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 0.5rem;
   }
 }
