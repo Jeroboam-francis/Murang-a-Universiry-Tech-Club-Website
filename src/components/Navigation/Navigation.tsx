@@ -17,7 +17,6 @@ const Navigation: React.FC = () => {
 
 export default Navigation;
 
-
 interface NavigationLinkProps {
   to: string;
   label: string;
@@ -26,7 +25,9 @@ interface NavigationLinkProps {
 const NavigationLink: React.FC<NavigationLinkProps> = ({ to, label }) => {
   return (
     <li>
-      <NavLink to={to}>{label}</NavLink>
+      <NavLink to={to} className={({ isActive }) => (isActive ? "active" : "")}>
+        {label}
+      </NavLink>
     </li>
   );
 };

@@ -1,7 +1,31 @@
 .header-navigation {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 0;
-  gap: 2rem;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-navigation li {
+  margin: 0 1rem;
+}
+
+.header-navigation a {
+  color: var(--light-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.header-navigation a:hover {
+  color: var(--secondary-color);
+}
+
+.header-navigation a.active {
+  color: var(--secondary-color);
+  border-bottom: 0.2rem solid var(--secondary-color);
 }

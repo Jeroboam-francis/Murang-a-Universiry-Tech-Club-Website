@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #410445;
+  --primary-color: #73047a;
   --secondary-color: #ebbce2;
   --accent-color: #1f7d53;
   --text-color: #333;
@@ -23,7 +23,6 @@
   }
   a {
     text-decoration: none;
-    
   }
   ul,
   ol {
