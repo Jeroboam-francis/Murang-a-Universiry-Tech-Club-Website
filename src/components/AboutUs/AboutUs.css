@@ -14,7 +14,7 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   position: relative;
   z-index: 1;
-  border-top: 5px solid var(--primary-color);
+  border-top: 5px solid var(--accent-color);
 }
 
 .section-title {

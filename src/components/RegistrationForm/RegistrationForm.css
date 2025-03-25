@@ -70,7 +70,7 @@
 }
 
 .form-group input:invalid:not(:placeholder-shown) {
-  border-color: #dc3545;
+  border-color: var(--primary-color);
 }
 
 .form-group input:valid:not(:placeholder-shown) {

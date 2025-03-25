@@ -2,6 +2,7 @@
   background-color: var(--primary-color);
   color: var(--light-color);
   padding: 2rem 0;
+  border-top: 5px solid var(--accent-color);
 }
 
 .container {
