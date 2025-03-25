@@ -8,8 +8,8 @@ const Navigation: React.FC = () => {
       <ol className="header-navigation">
         <NavigationLink to="/" label="Home" />
         <NavigationLink to="/tracks" label="Tracks" />
-        <NavigationLink to="/events" label="Events" />
         <NavigationLink to="/leadership" label="Leadership" />
+        <NavigationLink to="/events" label="Events" />
       </ol>
     </div>
   );
