@@ -1,0 +1,83 @@
+.tracks-section {
+  background-color: var(--light-color);
+  padding: 4rem 2rem;
+}
+
+.tracks-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tracks-section-title {
+  color: var(--accent-color);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.tracks-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.track-item {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border: 1px solid var(--secondary-color);
+  border-top: 6px solid var(--accent-color);
+}
+
+.track-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.track-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+}
+
+.track-details h3 {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.track-details p {
+  color: var(--dark-color);
+  line-height: 1.6;
+  font-size: 1rem;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .tracks-content {
+    grid-template-columns: 1fr;
+  }
+
+  .tracks-section-title {
+    font-size: 2rem;
+  }
+
+  .track-item {
+    padding: 1.5rem;
+  }
+}
+
+.track-icon svg {
+  transition: transform 0.3s ease;
+}
+
+.track-item:hover .track-icon svg {
+  transform: scale(1.1);
+}
