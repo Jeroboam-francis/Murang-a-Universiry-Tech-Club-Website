@@ -4,16 +4,11 @@ function AboutUs() {
   return (
     <section id="about" className="about-section">
       <div className="about-container">
-        <h2 className="section-title">About Us</h2>
-        <div className="about-grid">
-          <div>
-            <img
-              src="./src/assets/hero.jpg"
-              alt="MUTC members collaborating"
-              className="about-image"
-            />
-          </div>
-          <div>
+        <div className="about-header">
+          <h2 className="section-title">About Us</h2>
+        </div>
+        <div className="about-content">
+          <div className="about-content-section">
             <h3 className="about-subtitle">Our Mission</h3>
             <p className="about-text">
               The Murang'a University Tech Club (MUTC) is dedicated to advancing
@@ -21,7 +16,9 @@ function AboutUs() {
               a vibrant community of tech enthusiasts who support each other in
               exploring the ever-evolving world of technology.
             </p>
+          </div>
 
+          <div className="about-content-section">
             <h3 className="about-subtitle">Our Values</h3>
             <ul className="about-list">
               <li className="about-list-item">
@@ -50,7 +47,9 @@ function AboutUs() {
                 </span>
               </li>
             </ul>
+          </div>
 
+          <div className="about-content-section">
             <h3 className="about-subtitle">Our Objectives</h3>
             <p className="about-text">
               MUTC offers a range of events and classes throughout the week,
