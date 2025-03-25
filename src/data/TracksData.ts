@@ -1,13 +1,12 @@
 import {
-  ShieldCheck,
-  PaletteIcon,
-  Code,
-  Smartphone,
-  Cloud,
-  Settings,
-} from "lucide-react";
+  FaShieldAlt,
+  FaPalette,
+  FaCode,
+  FaMobileAlt,
+  FaCloud,
+  FaCog,
+} from "react-icons/fa";
 
-// Define the Track interface
 export interface Track {
   id: string;
   title: string;
@@ -15,7 +14,6 @@ export interface Track {
   icon: string;
 }
 
-// Tracks data
 export const tracks: Track[] = [
   {
     id: "cyber-security",
@@ -61,15 +59,13 @@ export const tracks: Track[] = [
   },
 ];
 
-// Map of track icons to Lucide React icons
 export const iconMap = {
-  "shield-security": ShieldCheck,
-  "design-tools": PaletteIcon,
-  code: Code,
-  "mobile-phone": Smartphone,
-  "cloud-computing": Cloud,
-  "power-apps": Settings,
+  "shield-security": FaShieldAlt,
+  "design-tools": FaPalette,
+  code: FaCode,
+  "mobile-phone": FaMobileAlt,
+  "cloud-computing": FaCloud,
+  "power-apps": FaCog,
 };
 
-// Extract just the track titles
 export const trackTitles = tracks.map((track) => track.title);
