@@ -78,7 +78,11 @@ function Leadership() {
         </a>
       );
     }
-    return socialLinks;
+    return socialLinks.length > 0 ? (
+      socialLinks
+    ) : (
+      <p>No social links available</p>
+    );
   };
 
   return (
@@ -95,11 +99,7 @@ function Leadership() {
 
         <section className="leadership-grid">
           {leadershipTeam.map((leader) => (
-            <div
-              key={leader.id}
-              className="leader-card"
-              onClick={() => setSelectedLeader(leader.id)}
-            >
+            <div key={leader.id} className="leader-card">
               <div className="leader-image-container">
                 <img
                   src={leader.imageUrl}
@@ -114,41 +114,12 @@ function Leadership() {
                   {renderSocialLinks(leader)}
                 </div>
               </div>
+              <div className="leader-bio">
+                <p>{leader.bio}</p>
+              </div>
             </div>
           ))}
         </section>
-
-        {selectedLeader && (
-          <div className="leader-modal">
-            <div className="leader-modal-content">
-              <button
-                className="close-modal"
-                onClick={() => setSelectedLeader(null)}
-              >
-                &times;
-              </button>
-              {leadershipTeam
-                .filter((leader) => leader.id === selectedLeader)
-                .map((leader) => (
-                  <div key={leader.id} className="leader-modal-details">
-                    <img
-                      src={leader.imageUrl}
-                      alt={leader.name}
-                      className="leader-modal-image"
-                    />
-                    <div className="leader-modal-text">
-                      <h2>{leader.name}</h2>
-                      <h3>{leader.role}</h3>
-                      <p>{leader.bio}</p>
-                      <div className="leader-modal-social-links">
-                        {renderSocialLinks(leader)}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-            </div>
-          </div>
-        )}
       </main>
       <Footer />
     </div>
