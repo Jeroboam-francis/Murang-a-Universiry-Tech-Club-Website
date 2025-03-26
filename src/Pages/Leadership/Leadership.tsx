@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import { leadershipTeam } from "../../data/LeadershipData";
@@ -22,8 +21,6 @@ interface Leader {
 }
 
 function Leadership() {
-  const [selectedLeader, setSelectedLeader] = useState<string | null>(null);
-
   const renderSocialLinks = (leader: Leader) => {
     const socialLinks = [];
     if (leader.socialLinks.linkedin) {
